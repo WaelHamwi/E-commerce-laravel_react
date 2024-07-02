@@ -1,0 +1,193 @@
+.latestProduct{
+    width: 25%;
+}
+.top-latest-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+}
+.centered-products{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px !important;
+}
+
+.top-latest-products .top-rated-products,
+.top-latest-products .latest-products {
+    flex: 1;
+}
+
+.latest-title {
+    margin: 10px 0px;
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.gallery {
+    width: 50%;
+    margin: 0 8%
+}
+
+.latestProduct .image-latest {
+    width: 100%;
+}
+
+.latestProduct .image-latest img {
+    display: inline !important;
+    width: 100px;
+    height: 100px;
+}
+
+.gallery .latest-product-content {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.latestProduct p {
+    font-size: 8px;
+    height: 20px;
+}
+
+.latestProduct h4 {
+    color: var(--dark-blue);
+    font-size: 10px;
+    padding: 0;
+}
+
+.latestProduct .price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-blue);
+}
+
+.gallery .latest-product-content ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.gallery .latest-product-content ul li {
+    padding: 5px;
+}
+
+.gallery .latest-product-content ul li svg {
+    font-size: 15px;
+    transition: all 500ms ease;
+}
+
+.gallery .latest-product-content ul li svg:hover {
+    transform: scale(1.3);
+}
+
+.gallery .latest-product-content ul li .solid-star {
+    color: gold;
+}
+
+.gallery .latest-product-content ul li .half-star {
+    color: gold;
+}
+
+.gallery .latest-product-content ul li .regular-star {
+    color: gray;
+}
+
+.gallery .latest-product-content button {
+    font-size: 8px;
+    padding: 5px;
+    outline: none;
+    width: 30%;
+    cursor: pointer;
+    justify-content: center;
+    background: var(--dark-blue);
+}
+
+.gallery .latest-product-content .latestProduct>* {
+    text-align: center !important;
+}
+
+.gallery .latest-product-content .latestProduct button {
+    margin-left: 36%;
+}
+
+
+@media (min-width: 100px) and (max-width: 500px) {
+    .latestProduct{
+        height: 100%;
+        width: 30%;
+    }
+    .gallery {
+        margin: 0 0 0 3%;
+    }
+
+    .gallery .latest-title {
+        font-size: 10px !important;
+    }
+
+    .gallery .latest-product-content .latestProduct button {
+        width: 60px;
+        margin-left: 4%;
+    }
+
+    .gallery .latest-product-content .latestProduct>* {
+        text-align: start !important;
+      
+    }
+
+    .latestProduct p {
+       height: 20px;
+        font-size: 6px;
+    }
+
+    .latestProduct h4 {
+        font-size: 6px;
+    }
+
+    .latestProduct .image-latest img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .latestProduct .image-latest {
+        width: 75%;
+    }
+
+    .gallery .latest-product-content ul li {
+        padding: 1px
+    }
+
+    .gallery .latest-product-content {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .latestProduct{
+        width: 50%;
+    }
+    .gallery .latest-product-content {
+        justify-content: center;
+    }
+
+    .gallery {
+        margin: 0;
+    }
+
+    .latestProduct .image-latest img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media  (max-width: 1000px) {
+    .latestProduct{
+        width: 40%;
+    }
+}

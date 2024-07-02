@@ -1,0 +1,203 @@
+:root {
+    /* Dark mode colors */
+    --dark-mode-bg: #121212;
+    --dark-mode-bg-header: rgba(100, 100, 100, 0.4);
+    --dark-mode-text: #ffffff;
+    --dark-blue-gray: #27334760;
+    --dark-mode-primary: #bb86fc;
+    --dark-mode-secondary: #03dac6;
+    --dark-mode-accent: #03dac6;
+    --dark-mode-border: #333333;
+    --dark-mode-link: #6200ee;
+    --dark-mode-error: #cf6679;
+    --dark-mode-warning: #ffd166;
+    --dark-mode-success: #4caf50;
+    --dark-mode-info: #2196f3;
+    --dark-mode-info-lighter: #2195f3be;
+    --dark-mode-info-light: hsla(206, 30%, 85%, 0.466);
+    --dark-mode-background-secondary: #333333;
+    --dark-mode-background-tertiary: #1e1e1e;
+    --dark-mode-text-muted: rgba(255, 255, 255, 0.3);
+    --dark-mode-text-muted-lighter: rgba(255, 255, 255, 0.2);
+    /* Light mode colors */
+    --light-mode-bg: #ffffff;
+    --light-mode-bg-header: rgba(255, 255, 255, 0.9);
+    --light-mode-text: #000000;
+    --light-blue-gray: rgba(50, 50, 50, 0.2);
+    --light-mode-primary: #6200ee;
+    --light-mode-secondary: #03dac6;
+    --light-mode-accent: #03dac6;
+    --light-mode-border: #e0e0e0;
+    --light-mode-link: #1976d2;
+    --light-mode-error: #f44336;
+    --light-mode-warning: #ff9800;
+    --light-mode-success: #4caf50;
+    --light-mode-info: #2196f3;
+    --light-mode-background-secondary: #f5f5f5;
+    --light-mode-background-tertiary: #fafafa;
+    --light-mode-text-muted: rgba(50, 50, 50, 0.6);
+    --light-mode-text-muted-lighter: rgba(100, 100, 100, 0.7);
+  
+    /* Neutral colors */
+    --neutral-gray-light: #f5f5f5;
+    --neutral-gray-light-opacity: rgba(245, 245, 245, 0.3);
+    --neutral-gray-dark: #2c2c2c;
+    --light-mode-neutral-gray-dark-opacity: rgba(44, 44, 44, 0.3);
+    --neutral-gray: #808080;
+    --neutral-red: #ff0000;
+    --neutral-blue: #0000ff;
+    --neutral-green: #008000;
+    --neutral-yellow: #ffff00;
+    --neutral-purple: #800080;
+    --neutral-orange: #ffa500;
+    --neutral-orange-opacity: rgba(255, 165, 0, 0.2);
+    --neutral-cyan: #00ffff;
+    --neutral-pink: #ff69b4;
+  }
+  .flex{
+    display: flex;
+  }
+  /* Applying direct root colors */
+  section.contact-me {
+    margin:5%;
+    background-color: var(--light-mode-bg); 
+    color: var(--light-mode-text); 
+  }
+  
+  section.contact-me .icon-envelope-open {
+    color: var(--light-mode-text-muted); 
+  }
+  
+  section.contact-me .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  section.contact-me .subtitle {
+    color: var(--light-mode-text-muted); 
+    line-height: 1.5rem;
+  }
+  
+  section.contact-me #email,
+  section.contact-me #message {
+    all: unset;
+    background: var(--light-mode-background-tertiary); 
+    width: 15rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: 1px solid var(--light-mode-border); 
+    font-size: 1.2rem;
+    transition: all 400ms ease-in-out;
+  }
+  
+  section.contact-me #message {
+    resize: vertical;
+    min-height: 10rem;
+  }
+  
+  section.contact-me #email:focus,
+  section.contact-me #email:hover,
+  section.contact-me #message:focus,
+  section.contact-me #message:hover {
+    border: 1px solid var(--light-mode-accent);
+  }
+  
+  section.contact-me label {
+    color: var(--light-mode-text-muted); 
+    align-self: center;
+  }
+  
+  section.contact-me .message-part {
+    margin-top: 2rem;
+  }
+  
+  section.contact-me .submit {
+    padding: 0.77rem 0;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.1rem;
+    background: var(--light-mode-secondary); 
+    border-radius: 7px;
+    width: 16.2rem;
+    transition: all 400ms ease;
+  }
+  
+  section.contact-me .submit:hover {
+    scale: 1.1;
+  }
+  
+  .success-message {
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .success-message h2 {
+    color: var(--light-mode-success); 
+  }
+  
+  .Lottie {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contactMe-animation {
+    width: 370px;
+    height: 370px;
+  }
+  
+  .map {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    section.contact-me form {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    section.contact-me #email,
+    section.contact-me #message {
+      margin-left: 0;
+      margin-top: 0.8rem;
+      padding: 0.6rem 0;
+      width: 95%;
+    }
+  
+    section.contact-me form div.flex {
+      flex-direction: column;
+    }
+  
+    section.contact-me .animated {
+      display: none;
+    }
+  
+    section.contact-me .submit {
+      width: 50%;
+      align-self: center;
+    }
+  }
+  
+  @media (max-width: 870px) {
+    section.contact-me .contactMe-animation {
+      display: none;
+    }
+  }
+  

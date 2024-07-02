@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --gray-color: #6c757d;
+    --border-color: #ced4da;
+    --shadow-color: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    --card-border-radius: 2 rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --Pale-Gray: #CCCCCC;
+    --bg-color: #ffffff;
+    --light-gray: #ebe4e6;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: auto;
+}
+
+/*************************************************navbar***********************************************/
+header {
+    position: fixed;
+    padding: 20px 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    user-select: none;
+}
+
+.navBar a {
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 4rem;
+    color: var(--bg-color);
+}
+
+.navBar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 0.5rem;
+    height: 0.22rem;
+    left: 0;
+    bottom: -7px;
+    transform: scaleX(0);
+    transition: all 400ms ease;
+    transform-origin: left;
+}
+
+.navBar a:hover::after {
+    transform: scaleX(1);
+}
+
+.navBar .formBtn {
+    background: transparent;
+    width: 5.8rem;
+    height: 3.5rem;
+    outline: none;
+    border: 2px solid var(--bg-color);
+    border-radius: var(--border-radius-2);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    margin-left: 2.7rem;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.navBar .btnLogin:hover {
+    background: var(--bg-color);
+    color: (var(--primary-color));
+}
+
+/*************************************************navbar ends***********************************************/
+
+/*************************************************main login page starts***********************************************/
+.authGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../../../../public/Auth.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*************************************************login and the register form starts***********************************************/
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*to let the button boundary not exceeded the form*/
+    height: 650px;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 1px 10px;
+    border-radius: var(--border-radius-2);
+    backdrop-filter: blur(3px);
+    transition: all 400ms ease;
+    margin-top: 7.5rem;
+}
+
+.wrapper:hover {
+    box-shadow: none;
+}
+
+.wrapper .credentials-form {
+    width: 100%;
+    padding: var(--card-padding);
+}
+
+.credentials-form h2 {
+    color: black;
+    text-align: center;
+    font-weight: bolder !important;
+    margin-top: 70px
+}
+
+.form-control {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid var(--dark-color);
+    margin: 30px 0;
+}
+
+.credentials-form label {
+    position: absolute;
+    left: 1.3rem;
+    top: 20%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--Pale-Gray);
+    font-weight: 400;
+    pointer-events: none;
+    transition: all 500ms ease;
+}
+
+.credentials-form input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+    color: var(--info-color);
+    font-weight: 700;
+    padding: 0 2.3rem 0 1.4rem;
+}
+
+.credentials-form .material-icons {
+    position: absolute;
+    right: 1.2rem;
+    color: var(--Pale-Gray);
+    line-height: 4rem;
+    cursor: pointer;
+}
+
+.credentials-form input:focus~label {
+    top: -10px;
+}
+
+/*=================================hide the visible default icon============================================*/
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
+
+.form-btn {
+    width: 100%;
+    height: 2.2rem;
+    border: none;
+    outline: none;
+    background: var(--primary-color);
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--bg-color);
+}
+
+.login-register {
+    font-size: 0.8rem;
+    color: var(--dark-color);
+    text-align: center;
+    font-weight: 700;
+    margin: 2.5rem 0 3rem;
+}
+
+.login-register p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder !important;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 0;
+    width: 2.5rem;
+    font-size: 2rem;
+    color: var(--bg-color);
+    height: 2.5rem;
+    right: 0;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.form-control input {
+    transition: all 600ms ease;
+
+}
+
+.form-control input:focus:valid {
+    color: var(--accent-color);
+
+}
+
+.form-control input:focus:not(:valid) {
+    color: var(--danger-color);
+}
+
+.wrapper .error {
+    display: block;
+    background: var(--danger-color);
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+    border-radius: var(--border-radius-2);
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+
+.GoogleButton {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/***********************************************************logout button***********************************************/
+.Logout {
+    background: var(--danger-color);
+    cursor: pointer !important;
+    pointer-events: auto;
+    border-radius: var(--border-radius-3);
+
+}
+
+/*****************************************************media query area************************************************/
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50px;
+        padding: 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        z-index: 1000;
+        margin-top: 100px;
+    }
+
+
+    .navBar .formBtn {
+        margin-left: 0;
+    }
+
+    header .navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .wrapper {
+        margin-top: 25rem;
+    }
+
+    .navBar a {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    header {
+        padding: 20px 80px 0px;
+    }
+
+    .wrapper {
+        margin-top: 10rem;
+
+    }
+
+    header .navBar {
+        display: flex;
+
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .navBar .formBtn {
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    /* Your iPhone X specific styles here */
+    * {
+        background-color: #f0f0f0 !important;
+        /* Example background color */
+    }
+}
+
+/*************************************************login and register form ends***********************************************/

@@ -1,0 +1,49 @@
+# Node modules
+/node_modules
+
+# Build and hot files
+/public/build
+/public/hot
+
+# Storage files
+/public/storage
+/storage/*.key
+
+# Vendor directory
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# Homestead configuration files
+Homestead.json
+Homestead.yaml
+
+# Authentication file
+auth.json
+
+# Debug and error logs
+npm-debug.log
+yarn-error.log
+
+# Fleet, IDEA, and VS Code directories
+/.fleet
+/.idea
+/.vscode
+
+# PHPUnit cache files
+/.phpunit.cache
+
+# Ignore environment configuration file
+.env
+
+
+# Ignore any logs
+/storage/logs/
+
+
+
+# Ignore uploaded images
+/public/uploads/

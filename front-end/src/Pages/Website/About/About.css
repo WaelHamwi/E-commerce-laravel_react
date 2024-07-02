@@ -1,0 +1,90 @@
+.about-wrapper {
+    background: #001232;
+    color: white;
+    padding: 20px 160px;
+  }
+  
+  .heading {
+    text-align: center;
+    padding-top: 50px;
+    max-width: 50%;
+    margin: auto;
+  }
+  
+  .heading h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .heading p {
+    line-height: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .about img {
+    width: auto;
+    height: auto;
+  }
+  
+  .about .box {
+    border: 2px solid #F56A79;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .about .box:hover {
+    background: #F56A79;
+  }
+  
+  .about .box i {
+    font-size: 50px;
+  }
+  
+  .about .box h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .about .box p {
+    line-height: 30px;
+  }
+  
+  .features_box {
+    margin-top: 40px;
+  }
+  
+  .features_box svg {
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+    text-align: center;
+    color: #ED2F77;
+    margin-top: 10px;
+  }
+  
+  .features_box .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .features_box p {
+    line-height: 30px;
+  }
+  @media only screen and (max-width:768px) {
+    .accordionWrapper,
+    .wrapper .container,
+    .about .content {
+      flex-direction: column;
+    }
+  }  

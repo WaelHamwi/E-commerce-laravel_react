@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --orange-color: #FFA500;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --gray-color: #6c757d;
+    --border-color: #ced4da;
+    --shadow-color: 0px 4px 8px rgba(61, 18, 48, 0.349);
+    --card-border-radius: 2 rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    --Pale-Gray: #CCCCCC;
+    --bg-color: #ffffff;
+    --light-gray: #ebe4e6;
+    --dark-blue: #090e3f;
+    --padding-panels: 0px 2rem;
+}
+
+.material-icons {
+    font-family: 'Material Icons' !important;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155vh;
+    margin: 2rem auto;
+    width: 60%;
+    background: linear-gradient(140deg, #2a327a, #534a4a);
+    box-shadow: var(--shadow-color);
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+}
+
+.form-container form {
+    height: 100%;
+
+}
+
+.form-container:hover {
+    box-shadow: none;
+}
+
+.form-container .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    border-radius: var(--border-radius-2);
+    background: linear-gradient(140deg, #646fce, #cc8a8a);
+    color: var(--bg-color);
+}
+
+
+
+.form-container .form-details {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .form-details .input-box {
+    width: calc(100% /2 -20px);
+    margin: 5px 10px;
+}
+
+.form-container .form-details input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--border-color);
+    border-bottom-width: 2.4px;
+    transition: all 0.4s ease;
+    padding: 5px;
+    color: var(--info-color);
+    padding: 20px;
+}
+
+.form-container .form-details input:focus,
+.form-container .form-details input:valid {
+    border-color: var(--accent-color);
+}
+
+.form-container .form-details input:not(:valid) {
+    border-color: var(--danger-color);
+}
+
+.form-container .form-details .details {
+    display: block;
+    font-weight: 300;
+    margin-bottom: 2.5px;
+    color: var(--bg-color);
+    background-color: #4f5694;
+    padding: 5px 10px;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--shadow-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form-container .form-details .details:hover {
+    box-shadow: none;
+    font-weight: 400;
+}
+
+.form-container .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+}
+
+.form-container .button button {
+    width: 120px;
+    outline: none;
+    background: linear-gradient(140deg, #646fce, #cc8a8a);
+    border: none;
+    color: var(--bg-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    padding: 12px auto;
+    height: 40px;
+    margin: auto auto;
+    margin-bottom: 40px;
+}
+
+.form-container .button input:hover {
+    background: linear-gradient(-140deg, #646fce, #cc8a8a);
+    filter: brightness(0.8);
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 100px;
+}
+
+.error span {
+    background-color: var(--bg-color);
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    box-shadow: var(--shadow-color);
+    border-radius: var(--border-radius-3);
+    color: var(--danger-color);
+    padding: 10px 20px;
+}
+
+.error span:hover {
+    box-shadow: none;
+}
+
+.invalid {
+    border: 2px solid var(--danger-color) !important;
+}
+
+.form-container .input-box .password_visibile {
+    position: relative;
+
+
+}
+
+.form-container .input-box .password_visibile input {
+    width: 100% !important;
+
+}
+
+.password_visibile .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-70%);
+    color: var(--Pale-Gray);
+}
+
+/*user select role*/
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.select-wrapper .material-icons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.select-wrapper select:focus {
+    outline: none;
+    border-color: #646fce;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1444px) {
+    .form-container .form-details .input-box {
+        width: calc(90% - 20px);
+        margin-top: 1px;
+    }
+
+    .form-container form {
+        margin-top: 14rem
+    }
+
+    .form-container form div.title {
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width:1023px) {
+    .form-container .form-details .input-box {
+        width: calc(80% - 40px);
+    }
+
+    .form-container form {
+        margin-top: 10rem;
+
+    }
+
+    .form-container form div.title {
+        margin-bottom: 4.2rem;
+    }
+
+    .error {
+        margin: 10px 50px;
+    }
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+    .form-container {
+        height: 125vh;
+    }
+
+    .form-container .form-details .input-box {
+        width: calc(70% - 10px);
+    }
+
+    .form-container form {
+        margin-top: 12.4rem;
+    }
+
+    .form-container form div.title {
+        margin-bottom: 2.5rem;
+    }
+
+    .error {
+        margin: 10px 30px;
+    }
+
+    .error span {
+        padding: 10px 20px;
+    }
+
+}

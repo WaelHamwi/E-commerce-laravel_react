@@ -1,0 +1,193 @@
+/*=========================================Banner section=========================================*/
+.banner {
+    margin: 30px 25px;
+}
+
+.slider-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    -webkit-border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-2);
+    overflow: auto hidden;
+    -webkit-scroll-snap-type: inline mandatory;
+    -ms-scroll-snap-type: inline mandatory;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+.slider-item {
+    position: relative;
+    min-width: 100%;
+    max-height: 450px;
+    aspect-ratio: 1 / 1;
+    -webkit-border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.slider-item .banner-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right;
+    object-position: right;
+}
+
+.banner-content {
+    background: hsla(0, 0%, 100%, 0.8);
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    padding: 20px 25px;
+    -webkit-border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-2);
+}
+
+.banner-subtitle {
+    color: var(--dark-blue);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    color: var(--dark-blue);
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.banner-text {
+    display: none;
+}
+
+.banner-btn {
+    background: var(--dark-blue);
+    color: var(--bg-color);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    -webkit-border-radius: var(--border-radius-1);
+    border-radius: var(--border-radius-1);
+    -webkit-transition: ease-in-out;
+    -o-transition: ease-in-out;
+    transition: ease-in-out;
+}
+
+
+.banner-btn:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+
+.slider-item {
+    aspect-ratio: 5 / 3;
+}
+
+.banner-content {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 320px;
+}
+
+.banner-subtitle {
+    --fs-7: 1rem;
+}
+
+.banner-text {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.banner-text b {
+    font-size: var(--fs-2);
+}
+
+.banner-btn {
+    padding: 7px 20px;
+}
+@media (min-width: 570px) {
+    /*=========================================Banner section=========================================*/
+    .slider-item { aspect-ratio: 4 / 2; }
+
+  .banner-content { background: none; }
+
+}
+
+@media (min-width: 768px) {
+    /*=========================================Banner section=========================================*/
+    .slider-item {
+        aspect-ratio: auto;
+        height: 350px;
+      }
+    
+      .banner-content { max-width: 380px; }
+    
+      .banner-subtitle { --fs-7: 1.25rem; }
+    
+      .banner-text { --fs-7: 1.125rem; }
+    
+      .banner-text b { --fs-2: 1.875rem; }
+    
+      .banner-btn { --fs-11: 0.75rem; }
+    
+}
+
+
+@media (min-width: 1024px) {
+    /*=========================================Banner section=========================================*/
+    .banner { margin-top: 0; }
+
+  .slider-item { height: 380px; }
+
+  .banner-content {
+    left: 75px;
+    max-width: 400px;
+  }
+
+  .banner-subtitle { --fs-7: 1.625rem; }
+
+  .banner-text { --fs-7: 1.375rem; }
+
+  .banner-btn { --fs-11: 0.875rem; }
+
+}
+
+@media (min-width: 1200px) {
+    /*=========================================Banner section=========================================*/
+    .slider-item:last-child .banner-img { -o-object-position: top; object-position: top; }
+}
+@media (min-width: 1400px) {
+    /*=========================================Banner section=========================================*/
+    .slider-item { height: 450px; }
+
+    .banner-content {
+      left: 110px;
+      max-width: 460px;
+    }
+}
