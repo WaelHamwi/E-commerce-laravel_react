@@ -45,16 +45,19 @@ git clone https://github.com/yourusername/E-commerce-laravel_react.git
 cd e-commerce-laravel-react
 
 # 🖥️ **Front-End Setup**
-echo "🖥️ Setting up the front-end..."
+🖥️ Setting up the front-end..."
 
-# Navigate to the front-end directory and create a new React app
+ **Navigate to the front-end directory and create a new React app**
 npx create-react-app front-end
 cd front-end
 
 # Install Required Packages
-echo "📦 Installing front-end dependencies..."
-npm install react-router-dom
-npm install axios
+📦 Installing front-end dependencies...
+
+`npm install react-router-dom`
+
+`npm install axios`
+
 npm install typeface-poppins
 npm install cookie-universal
 npm install --save react-google-button
