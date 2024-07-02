@@ -55,7 +55,6 @@ cd front-end
 📦 Installing front-end dependencies...
 
 `npm install react-router-dom`
-
 `npm install axios`
 
 npm install typeface-poppins
