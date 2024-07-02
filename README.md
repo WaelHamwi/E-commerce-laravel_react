@@ -7,31 +7,38 @@
  
  ## ✨ **1. Install Composer Dependencies**
  Make sure you have all the necessary Composer dependencies installed.
-composer install
+ 
+`composer install`
 
 ## ✨ **2. Generate Application Key**
  Generate a new application key for encryption.
-php artisan key:generate
+ 
+`php artisan key:generate`
 
 ## ✨ **3. Run Database Migrations**
  Create the necessary tables in your database.
-php artisan migrate
+ 
+`php artisan migrate`
 
 ## ✨ **4. Install Passport for API Authentication**
   Set up Passport for managing API tokens.
-php artisan passport:install
+  
+`php artisan passport:install`
 
 ##  ✨ **5. Create a Personal Access Client**
   Generate a personal access token for API requests.
-php artisan passport:client --personal
+  
+`php artisan passport:client --personal`
 
 ##  ✨ **6. Seed the Database with Initial Data**
  Populate the database with initial data.
-php artisan db:seed --class=DatabaseSeeder
+ 
+`php artisan db:seed --class=DatabaseSeeder`
 
 ##  ✨ **7. Start the Laravel Development Server**
  Run the server and access your application at http://localhost:8000.
-php artisan serve
+ 
+`php artisan serve`
 
 # ✅ **All done! Your Laravel project is set up and ready for testing.**
 
