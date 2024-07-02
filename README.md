@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # 🛒 E-Commerce Laravel & React Setup
 
 # 🎯 Welcome to the **E-Commerce Laravel & React** project! 🚀
