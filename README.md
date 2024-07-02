@@ -1,7 +1,7 @@
 # 🛒 E-Commerce Laravel & React Setup
 
-# 🎯 Welcome to the **E-Commerce Laravel & React** project! 🚀
-# This is a **full-stack web application** designed to offer a **seamless and secure e-commerce experience**. Built using **Laravel** for the backend and **React** for the frontend, this project incorporates advanced features to ensure a top-notch user experience and robust functionality.
+🎯 Welcome to the **E-Commerce Laravel & React** project! 🚀
+ This is a **full-stack web application** designed to offer a **seamless and secure e-commerce experience**. Built using **Laravel** for the backend and **React** for the frontend, this project incorporates advanced features to ensure a top-notch user experience and robust functionality.
 
 # 🌟 Project Overview
 # **E-Commerce Laravel & React** combines modern technologies and best practices to create a feature-rich e-commerce platform. Here’s what makes this project stand out:
