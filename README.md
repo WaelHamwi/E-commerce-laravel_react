@@ -29,7 +29,7 @@
 # 🚀 Getting Started
  Follow the steps below to get started with the project.
 
-# ## Table of Contents
+ # Table of Contents
  1. [Clone the Repository](#clone-the-repository)
  2. [Front-End Setup](#front-end-setup)
  3. [Back-End Setup](#back-end-setup)
