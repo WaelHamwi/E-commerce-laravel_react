@@ -131,9 +131,9 @@ php artisan route:clear
 
 # Follow Prompts to Create a New Client
 echo "📝 Creating a new client..."
-# Client Name: EcommerceClient
-# Redirect URL: http://localhost/auth/callback
-# The output will provide the Client ID and Client Secret.
+ Client Name: EcommerceClient
+ Redirect URL: http://localhost/auth/callback
+ The output will provide the Client ID and Client Secret.
 
 # Create Controllers
 echo "🎨 Creating controllers..."
@@ -143,12 +143,12 @@ php artisan make:controller GoogleAuthController
 # Google Sign-In Setup
 echo "🔐 Setting up Google Sign-In..."
 composer require laravel/socialite
-# Follow the guide: Laravel Google Sign-In
-# [Laravel Socialite Documentation](https://laravel.com/docs/10.x/socialite)
+ Follow the guide: Laravel Google Sign-In
+ [Laravel Socialite Documentation](https://laravel.com/docs/10.x/socialite)
 
 # Handle SSL Issue
 echo "🔄 Handling SSL issues..."
-# Follow this YouTube guide for SSL Issue Resolution: [YouTube Guide](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+ Follow this YouTube guide for SSL Issue Resolution: [YouTube Guide](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 # Database Seeding
 echo "🌱 Seeding the database..."
